@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { VictoryBar } from 'victory';
+import { VictoryBar, VictoryChart } from 'victory';
 import './App.css';
 
 const data = [
@@ -12,10 +12,9 @@ const data = [
 class App extends Component {
   render() {
     return (
-      <VictoryBar>
-        data={data}
-        x="quarter" y="earnings"
-      </VictoryBar>
+      <VictoryChart>
+        <VictoryBar data={data} x="quarter" y="earnings" />
+      </VictoryChart>
     );
   }
 }
