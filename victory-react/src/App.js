@@ -45,7 +45,7 @@ class App extends Component {
           tickFormat={['Quarter 1', 'Quarter 2', 'Quarter 3', 'Quarter 4']}
         />
         <VictoryAxis dependentAxis tickFormat={x => `$${x / 1000}k`} />
-        <VictoryStack>
+        <VictoryStack colorScale={'warm'}>
           <VictoryBar data={data2012} x="quarter" y="earnings" />
           <VictoryBar data={data2013} x="quarter" y="earnings" />
           <VictoryBar data={data2014} x="quarter" y="earnings" />
