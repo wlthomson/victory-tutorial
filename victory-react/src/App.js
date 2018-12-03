@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AnimalPie from './AnimalPie';
 import EarningsChart from './EarningsChart';
 
 import './App.css';
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div>
         <EarningsChart />
+        <AnimalPie />
       </div>
     );
   }
